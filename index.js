@@ -1,5 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const reverseWord = word.split('').reverse().join('')
+
+  if(reverseWord === word){
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
@@ -7,7 +14,9 @@ function isPalindrome(word) {
 */
 
 /*
-  Add written explanation of your solution here
+we want to store the input word in a variable, then use some logic
+to reverse the string and set it equal to a variable, then compare
+the two variables to see if they match. Then we will return tre or false 
 */
 
 // You can run `node index.js` to view these console logs
